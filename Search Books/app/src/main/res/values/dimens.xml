@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_eight">8dp</dimen>
+    <dimen name="margin_sixteen">16dp</dimen>
+    <dimen name="margin_thirty_two">32dp</dimen>
+    <dimen name="size_item_book_list">200dp</dimen>
+    <dimen name="size_main_content_item_book_list">197dp</dimen>
+    <dimen name="size_divider">3dp</dimen>
+    <dimen name="size_letter_btn">16sp</dimen>
+    <dimen name="size_letter_title">18sp</dimen>
+    <dimen name="size_btn">60dp</dimen>
+    <dimen name="size_letter_item_book_list">14sp</dimen>
+    <dimen name="width_image_detail">250dp</dimen>
+    <dimen name="height_image_detail">300dp</dimen>
+
+</resources>

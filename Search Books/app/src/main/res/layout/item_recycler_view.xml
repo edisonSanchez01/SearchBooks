@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="@dimen/size_item_book_list">
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_main_content_item_book_list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/image_book"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size_letter_item_book_list"
+                android:layout_marginTop="@dimen/margin_thirty_two"
+                android:layout_marginStart="@dimen/margin_eight"
+                android:layout_marginEnd="@dimen/margin_eight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/subTitle"
+                android:textStyle="bold"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textSize="@dimen/size_letter_item_book_list"
+                android:textColor="@android:color/black"
+                android:layout_margin="@dimen/margin_eight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:textStyle="bold"
+                android:textSize="@dimen/size_letter_item_book_list"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="@dimen/margin_eight"
+                android:layout_marginStart="@dimen/margin_eight"
+                android:layout_marginBottom="@dimen/margin_eight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divider"
+        app:layout_constraintTop_toBottomOf="@id/main_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Busca Tu Libro</string>
+    <string name="hint_edit_text">¿Que quieres buscar?</string>
+    <string name="text_btn_search">Buscar Libros</string>
+    <string name="error_invalid_text">Nombre del libro, referencia o autor no valido</string>
+    <string name="error_empty_text">No se admiten busquedas con textos vacios</string>
+    <string name="item_title">Titulo: \n</string>
+    <string name="main_title">Biblioteca Nacional</string>
+    <string name="item_subtitle">SubTitulo: \n</string>
+    <string name="item_price">Precio: \u0020</string>
+    <string name="book_rating">Calificacion: \u0020</string>
+    <string name="authors_book">Autores: \u0020</string>
+    <string name="pages_book">Paginas: \u0020</string>
+    <string name="year_book">Publicacion: \u0020</string>
+    <string name="desc_book">DESCRIPCION \n\n</string>
+    <string name="title_details">Detalles del libro</string>
+    <string name="error_request">No fue posible encontrar libros con ese nombre</string>
+    <string name="title_results">Resultados</string>
+    <string name="error_request_details_book">No se pudo extraer informacion de este libro intentalo mas tarde</string>
+</resources>

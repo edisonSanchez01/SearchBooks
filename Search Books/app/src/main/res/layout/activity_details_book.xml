@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".View.DetailsBookActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/action_bar"
+            layout="@layout/action_bar"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:gravity="center"
+            android:textSize="@dimen/size_letter_title"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/margin_eight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/subTitle"
+            android:textSize="@dimen/size_letter_btn"
+            android:layout_marginStart="@dimen/margin_sixteen"
+            android:layout_marginEnd="@dimen/margin_sixteen"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/width_image_detail"
+            android:layout_height="@dimen/height_image_detail"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_letter_btn"
+            android:layout_margin="@dimen/margin_sixteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/authors"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/margin_sixteen"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_letter_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pages"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size_letter_btn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/year"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/margin_sixteen"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size_letter_btn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_thirty_two">
+
+            <TextView
+                android:id="@+id/price"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size_letter_btn"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/rating"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/margin_sixteen"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size_letter_btn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

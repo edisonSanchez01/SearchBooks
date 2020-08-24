@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".View.MainActivity">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/action_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/main_title"
+        android:text="@string/main_title"
+        android:layout_margin="@dimen/margin_thirty_two"
+        android:textSize="@dimen/size_letter_title"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/content_searcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_thirty_two"
+        android:layout_marginEnd="@dimen/margin_thirty_two">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searcher"
+            android:hint="@string/hint_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_btn"
+        android:textStyle="bold"
+        android:theme="@style/ButoonStyle"
+        android:textSize="@dimen/size_letter_btn"
+        android:text="@string/text_btn_search"
+        android:layout_margin="@dimen/margin_sixteen"/>
+
+    <TextView
+        android:id="@+id/title_results"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_sixteen"
+        android:layout_marginEnd="@dimen/margin_sixteen"
+        android:visibility="invisible"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/size_letter_title"
+        android:text="@string/title_results"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_sixteen"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
